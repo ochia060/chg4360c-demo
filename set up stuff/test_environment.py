@@ -6,6 +6,7 @@ import pandas
 import scipy
 import sklearn
 import torch
+from sympy import true
 
 print("matplotlib   ", matplotlib.__version__)
 print("numpy        ", numpy.__version__)
@@ -43,3 +44,4 @@ fig.colorbar(pcm, ax=axes[2], label="# points", pad=0)
 axes[2].set_title("2d histogram and linear color scale")
 fig.savefig("test_figure.png")
 plt.close(fig)
+
